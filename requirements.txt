@@ -1,0 +1,5 @@
+PyPDF2
+streamlit
+google-generativeai
+IPython
+firebase_admin
