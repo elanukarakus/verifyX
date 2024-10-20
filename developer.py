@@ -12,7 +12,7 @@ def project_developer_page():
         cred = credentials.Certificate('serviceAccountKey.json')
         if not firebase_admin._apps:
             firebase_admin.initialize_app(cred, {
-                'storageBucket': 'verifyx-a1164.appspot.com'  # Replace with your actual bucket name
+                'storageBucket': ''  # Replace with your bucket name
             })
 
     #initialize Firebase
@@ -83,7 +83,7 @@ def project_developer_page():
                 submission_text = extract_text_from_pdf(pdf_file, 0, 117)  # Adjust as necessary
 
                 
-                GOOGLE_API_KEY = "AIzaSyC7TpzrIH_3-dppWE8exqdZX3DAdE6cy8w"  # Replace with your actual API key
+                GOOGLE_API_KEY = ""  # Replace with your API key
                 genai.configure(api_key=GOOGLE_API_KEY)
                 model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
